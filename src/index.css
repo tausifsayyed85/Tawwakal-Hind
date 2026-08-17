@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #15100F;
+    color: #F7F0E3;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #15100F;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A2E2C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A45C;
+}
+
+/* Custom pattern & luxury glow */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #E5C378 0%, #C9A45C 50%, #9B7835 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px rgba(201, 164, 92, 0.15);
+}
+
+.subtle-arch {
+  clip-path: ellipse(150% 100% at 50% 100%);
+}
